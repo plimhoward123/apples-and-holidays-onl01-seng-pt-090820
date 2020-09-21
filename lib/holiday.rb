@@ -98,7 +98,9 @@ def all_supplies_in_holidays(holiday_hash)
     elsif (key == :spring)
       spngstring = "Spring:\n"
       value.each do |holiday,item|
-        spngstring += (" " + holiday.to_s.capitalize + ": " + item.join(", ").to_s + "\n")
+        tmparry = holiday.to_s.split("_")
+        tmparry.each_with_index {|val,index| tmparry[index] = val.capitalize}
+        spngstring += (" " + tmparry.join(" ") + ": " +  item.join(", ").to_s + "\n"
       end
       finl_string += spngstring
     end
