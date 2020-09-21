@@ -102,8 +102,8 @@ def all_supplies_in_holidays(holiday_hash)
       end
       finl_string += spngstring
     end
-    puts finl_string
   end
+  puts finl_string
 end
 
 def all_holidays_with_bbq(holiday_hash)
