@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       finl_string += smrstring
 
-    else if (key == :fall)
+    elsif (key == :fall)
       fllstring = "Fall:\n"
       value.each do |holiday,item|
         fllstring +=  (" " + holiday.to_s.capitalize + ": " + item.join(", ").to_s + "\n")
