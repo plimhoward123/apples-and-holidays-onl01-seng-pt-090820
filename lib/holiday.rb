@@ -93,8 +93,16 @@ def all_supplies_in_holidays(holiday_hash)
       value.each do |holiday,item|
         fllstring +=  (" " + holiday.to_s.capitalize + ": " + item.join(", ").to_s + "\n")
       end
-      puts fllstring
+      finl_string += fllstring
+      
+    elsif (key == :spring)
+      spngstring = "Spring:\n"
+      value.each do |holiday,item|
+        spngstring += (" " + holiday.to_s.capitalize + ": " + item.join(", ").to_s + "\n")
+      end
+      finl_string += spngstring
     end
+    puts finl_string
   end
 end
 
