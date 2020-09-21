@@ -80,14 +80,6 @@ def all_supplies_in_holidays(holiday_hash)
         end
         finl_string += wntrstring
       end
-    elsif (key == :summer)
-      smrstring = "Summer:\n"
-    #  value.each do |holiday, item|
-    #    tmparry = holiday.to_s.split("_")
-    #    tmparry.each_with_index {|val,index| tmparry[index] = val.capitalize}
-    #    smrstring += (" " + tmparry.join(" ") + ": " +  item.join(",").to_s + "\n"
-    #  end
-    end
   end
 end
 
