@@ -87,7 +87,7 @@ def all_supplies_in_holidays(holiday_hash)
         smrstring += (" " + tmparry.join(" ") + ": " +  item.join(", ").to_s + "\n")
       end
       finl_string += smrstring
-      puts finl
+      puts finl_string
     end
   end
 end
